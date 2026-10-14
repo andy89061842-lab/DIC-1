@@ -3,108 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>安迪 Andy | 個人網站</title>
+    <title>安迪 Andy | Personal Page</title>
     <link rel="stylesheet" href="style.css">
-    <!-- 引入 Font Awesome 圖標 -->
+    <!-- 引入 Font Awesome 質感圖標 -->
     <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 <body>
 
-    <!-- 導覽列 -->
-    <nav class="navbar">
-        <div class="logo">ANDY<span>.BALL</span></div>
-        <ul class="nav-links">
-            <li><a href="#about">關於我</a></li>
-            <li><a href="#skills">專長技能</a></li>
-            <li><a href="#projects">個人作品</a></li>
-            <li><a href="#contact">聯絡安迪</a></li>
-        </ul>
-        <!-- 即時時鐘位置 -->
-        <div class="navbar-clock">
-            <i class="fa-regular fa-clock"></i> <span id="live-clock">00 : 00 : 00</span>
-        </div>
-    </nav>
-
-    <!-- 主視覺區 -->
-    <header class="hero">
-        <div class="hero-content">
-            <!-- 1. Profile: 個人照片區 (Avatar) -->
-            <div class="avatar-container">
-                <img src="https://unsplash.com" alt="安迪的照片" class="avatar">
+    <div class="container">
+        <!-- 頂部個人狀態區 -->
+        <header class="profile-header">
+            <div class="avatar-row">
+                <span class="avatar-tag">&lt;/&gt; andy89061842-lab</span>
+                <span class="status-badge"><span class="pulse-dot"></span> Active & Available</span>
             </div>
-            <h1>嗨，我是 <span>安迪 Andy</span></h1>
-            <p class="sub-text">熱愛打籃球，享受每一次起跳與空心入網的瞬間。</p>
-            <a href="#about" class="btn">了解更多 <i class="fa-solid fa-arrow-down"></i></a>
-        </div>
-    </header>
-
-    <!-- 1. Profile: 關於我區塊 -->
-    <section id="about" class="section">
-        <h2><i class="fa-solid fa-user"></i> 關於我</h2>
-        <div class="about-container">
-            <p><strong>姓名：</strong> 安迪 (Andy)</p>
-            <p><strong>科系 / 專長：</strong> 資訊工程系 / 網頁前端開發 & 運動數據分析</p>
-            <p><strong>簡短自我介紹：</strong> 籃球對我來說不僅僅是一項運動，更是一種生活態度。我喜歡與隊友並肩作戰的默契，同時也熱衷於鑽研網頁技術，希望未來能將科技與我最愛的運動結合！</p>
-        </div>
-    </section>
-
-    <!-- 2. Skills: 技能區塊 (至少列出 3 項) -->
-    <section id="skills" class="section bg-light">
-        <h2><i class="fa-solid fa-basketball"></i> 技能專長</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <div class="icon"><i class="fa-solid fa-code"></i></div>
-                <h3>Web Development</h3>
-                <p>熟悉 HTML、CSS 與 JavaScript 基礎架構，建立響應式網頁。</p>
-            </div>
-            <div class="skill-card">
-                <div class="icon"><i class="fa-brands fa-python"></i></div>
-                <h3>Python</h3>
-                <p>運用 Python 進行基礎資料處理，未來預計投入運動數據分析。</p>
-            </div>
-            <div class="skill-card">
-                <div class="icon"><i class="fa-solid fa-bolt"></i></div>
-                <h3>球場神速切入</h3>
-                <p>擅長利用第一步的爆發力撕裂對手防線，製造外線得分機會。</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3. Projects: 作品區塊 (至少介紹 1 個) -->
-    <section id="projects" class="section">
-        <h2><i class="fa-solid fa-folder-open"></i> 個人作品</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <h3><i class="fa-solid fa-laptop-code"></i> DIC-1 個人網站建置案</h3>
-                <p class="project-desc">這是我的第一個網頁開發專案，透過本機端測試並完整部署至 GitHub 平台。</p>
-                <div class="project-tech">
-                    <span>使用技術：</span>
-                    <span class="tech-tag">HTML</span>
-                    <span class="tech-tag">CSS</span>
-                    <span class="tech-tag">JavaScript</span>
+            <div class="main-profile">
+                <div class="profile-initial">A</div>
+                <div class="profile-title">
+                    <h1>andy89061842-lab</h1>
+                    <p class="subtitle">Basketball Enthusiast & Tech Learner</p>
                 </div>
-                <!-- 確保 Link 可以點擊 -->
-                <a href="https://github.com" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> 檢視 GitHub Repository</a>
             </div>
-        </div>
-    </section>
+            <p class="bio">熱愛在球場上奔跑、切入，同時也在網頁開發的世界裡探索、前進。歡迎來到我的個人數位空間。</p>
+        </header>
 
-    <!-- 聯絡方式區塊 -->
-    <section id="contact" class="section bg-light">
-        <h2><i class="fa-solid fa-envelope"></i> 聯絡安迪</h2>
-        <p>歡迎找我一起報隊、交流程式或球技！</p>
-        <div class="social-links">
-            <a href="https://github.com" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="mailto:andy@example.com" class="social-icon"><i class="fa-solid fa-envelope"></i> Email</a>
-        </div>
-    </section>
+        <!-- 即時時間與時間統計面板 -->
+        <section class="clock-panel">
+            <div class="clock-block">
+                <span class="label">CURRENT LOCAL TIME UTC+8</span>
+                <div id="live-clock" class="time-display">--:--:--</div>
+            </div>
+            <div class="date-meta-grid">
+                <div class="meta-item">
+                    <span id="live-date" class="meta-val">Loading...</span>
+                    <span class="meta-lbl">Current Date</span>
+                </div>
+                <div class="meta-item">
+                    <span id="day-of-week" class="meta-val">---</span>
+                    <span class="meta-lbl">Day of Week</span>
+                </div>
+                <div class="meta-item">
+                    <span id="day-in-year" class="meta-val">---</span>
+                    <span class="meta-lbl">Day in Year</span>
+                </div>
+                <div class="meta-item">
+                    <span id="timezone-lbl" class="meta-val">UTC+8</span>
+                    <span class="meta-lbl">Timezone</span>
+                </div>
+            </div>
+        </section>
 
-    <!-- 頁尾 -->
-    <footer>
-        <p>&copy; 2026 Andy. All Rights Reserved. Powered by Antigravity & AI Build.</p>
-    </footer>
+        <!-- 01. Core Technologies 核心技能區 -->
+        <section class="section">
+            <h2 class="section-title">01. Core Technologies</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>JavaScript / Logic</h3>
+                    <p>撰寫互動式網頁應用、控制動態時鐘運作與 DOM 邏輯操作。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎨</div>
+                    <h3>HTML5 & CSS3</h3>
+                    <p>建構語意化網頁結構、毛玻璃特效（Glassmorphism）與響應式排版。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Git & GitHub</h3>
+                    <p>熟悉版本控制、檔案託管流程，並透過 GitHub Pages 成功部署網站上線。</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- 4. Live Clock: 引入 JavaScript 讓時鐘會動 -->
+        <!-- 02. Projects 作品集區 -->
+        <section class="section">
+            <h2 class="section-title">02. Projects & Repositories</h2>
+            <div class="featured-badge">FEATURED REPO</div>
+            <div class="project-box">
+                <div class="project-header">
+                    <h3>DIC-1_PersonalPage</h3>
+                    <p>A sleek, dynamic personal portfolio page featuring real-time clock monitoring, responsive UI design, and modern dark aesthetics.</p>
+                </div>
+                <div class="project-footer">
+                    <div class="tech-stack">
+                        <span class="dot html-dot"></span> HTML
+                        <span class="dot css-dot"></span> CSS
+                        <span class="dot js-dot"></span> JavaScript
+                    </div>
+                    <a href="https://github.com" target="_blank" class="github-link">View on GitHub →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Let's Connect 聯絡我們 -->
+        <section class="connect-section">
+            <h2>Let's Connect</h2>
+            <p>有任何想交流的，或者想一起約出來報隊打球嗎？歡迎透過 GitHub 連結我！</p>
+            <a href="https://github.com" target="_blank" class="connect-btn">
+                <i class="fa-brands fa-github"></i> GitHub Profile
+            </a>
+        </section>
+
+        <!-- 頁尾 -->
+        <footer class="footer">
+            <p>&copy; 2026 andy89061842-lab. All rights reserved.</p>
+        </footer>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
