@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安迪 Andy | 個人網站</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 Font Awesome 圖標 -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- 導覽列 -->
+    <nav class="navbar">
+        <div class="logo">ANDY<span>.BALL</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">關於我</a></li>
+            <li><a href="#skills">籃球球風</a></li>
+            <li><a href="#contact">聯絡安迪</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主視覺區 -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>嗨，我是 <span>安迪 Andy</span></h1>
+            <p>「球場上的熱血，是我前進的動力。」</p>
+            <p class="sub-text">熱愛打籃球，享受每一次流汗、起跳與空心入網的瞬間。</p>
+            <a href="#about" class="btn">了解更多 <i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+    </header>
+
+    <!-- 關於我區塊 -->
+    <section id="about" class="section">
+        <h2><i class="fa-solid fa-user"></i> 關於我</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>你好！我是安迪。籃球對我來說不僅僅是一項運動，更是一種生活態度。</p>
+                <p>無論是清晨的街頭球場，還是深夜的單挑，只要手中抱著籃球，就能讓我忘卻所有煩惱。我喜歡與隊友並肩作戰的默契，也享受挑戰自我極限的過程。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 籃球球風/專長區塊 -->
+    <section id="skills" class="section bg-light">
+        <h2><i class="fa-solid fa-basketball"></i> 球場標籤與專長</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="icon"><i class="fa-solid fa-bolt"></i></div>
+                <h3>神速切入</h3>
+                <p>擅長利用第一步的爆發力撕裂對手防線，製造得分機會。</p>
+            </div>
+            <div class="skill-card">
+                <div class="icon"><i class="fa-solid fa-crosshairs"></i></div>
+                <h3>外線冷箭</h3>
+                <p>穩定的中遠距離投射能力，隨時準備在三分線外給予致命一擊。</p>
+            </div>
+            <div class="skill-card">
+                <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>鐵血防守</h3>
+                <p>具備高強度的防守專注度，積極拼搶每一個地板球與籃板。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡方式區塊 -->
+    <section id="contact" class="section">
+        <h2><i class="fa-solid fa-envelope"></i> 聯絡安迪</h2>
+        <p>歡迎找我一起報隊、打友誼賽或交流球技！</p>
+        <div class="social-links">
+            <a href="https://github.com" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="mailto:andy@example.com" class="social-icon"><i class="fa-solid fa-envelope"></i> Email</a>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer>
+        <p>&copy; 2026 Andy. All Rights Reserved. Powered by AI Build.</p>
+    </footer>
+
+</body>
+</html>
